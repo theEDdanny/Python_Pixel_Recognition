@@ -1,7 +1,7 @@
 # Pixel_Image_Recognition
 
    This is some software I wrote to get past security features on weblights that deny requests for HTML. In this repository I will give a brief introduction to the 
-   program, walk through each script, and go over some varieous uses for the software.   
+   program, describe how it works, and go over some varieous uses for the software.   
  
 # Brief Intro
 

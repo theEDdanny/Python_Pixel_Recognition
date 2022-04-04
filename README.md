@@ -8,7 +8,7 @@
    Some websights such 'BestBuy.com', 'OfferUp.com' and 'Creigslist.com' have mitigation strategies to prevent Robots from using their web pages. One of these strategies
    denies any trafic using the requests module in python. 
    
-   The picture below is the WAF response from bestbuy.com
+   This picture below is the WAF response from bestbuy.com
 
 ![WAF_Response](https://user-images.githubusercontent.com/92893340/161455165-81078a35-0a41-4527-917c-6ec8acf05918.PNG)
 

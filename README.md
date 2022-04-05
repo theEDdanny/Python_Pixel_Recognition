@@ -17,7 +17,7 @@
 
 # How It Works
 
-I belive the best way to describe how this software works in detail without writing a book is to describe each script briefly.
+I belive the best way to describe how this software works without writing a book is to describe each script briefly, and describe how the pic_in_pic function finds images basid on their pixel order. 
 
 Movement.py
 
@@ -29,4 +29,12 @@ the screenshotstuff script contains all the functions that gather and filter dat
 
 sc_control.py
 
-This script is full of functions that intalize and prepare data for the pic_in_pic function. Each function in this script contains the data for the picture that is being looked for in pic_in_pic. Although sc_control.py is simple its what makes this program versatile.
+This script is full of functions that intalize and prepare data for the pic_in_pic function. Each function in this script contains the data for the picture that is being looked for in pic_in_pic. Although sc_control.py is simple its what makes this program versatile.\
+
+keypressed.py
+
+In this script there are a few simple functions that are run when typing is necessary. 
+
+scroll.py
+
+Scroll.py is another simple script that is used to scroll down or up a page. 

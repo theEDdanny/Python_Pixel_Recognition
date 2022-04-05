@@ -20,19 +20,24 @@ I belive the best way to describe how this software works is to describe each sc
 
 # Scripts
 
-Movement.py:
+Movement.py
+
 The first script to be dissected is the Movement script. This is my main.py script that I renamed for simplicity. In this script all the instructions are given to the program. Any function that is built in any other script is executed here. It also handles all the user input functions like moving the mouse and clicking. 
 
-Screenshotstuff.py:
+Screenshotstuff.py
+
 the screenshotstuff script contains all the functions that gather and filter data on images. A good example of a usfull function in this script is the seperation_selected_area function. Which returns the RGB values of each pixel in a picture inputed as an argument. This script is also home to the fuction pic_in_pic. pic_in_pic is the function that makes this program work. It will get its own explanation after all the scripts have been explained. 
 
-sc_control.py:
+sc_control.py
+
 This script is full of functions that intalize and prepare data for the pic_in_pic function. Each function in this script contains the data for the picture that is being looked for in pic_in_pic. Although sc_control.py is simple its what makes this program versatile.
 
-keypressed.py:
+keypressed.py
+
 In this script there are a few simple functions that are run when typing is necessary. 
 
-scroll.py:
+scroll.py
+
 Scroll.py is another simple script that is used to scroll down or up a page. 
 
 # Functions

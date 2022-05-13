@@ -16,20 +16,21 @@
 
 # How It Works
 
-Here im giving a beirf discription of how my program works. I built a simple script named demonstartion.py that opens chrome and maximizes the window regardless of where the maximize button is on the screen. 
+Here I’m giving a brief description of how my program works. I built a simple script named demonstartion.py that opens chrome and maximizes the window regardless of where the maximize button is on the screen. 
 
-I have chrome pinned on my taskbar. So it will always have the same cordinents on the screen. This being said we can tell the computer to click those cordinents and it will be reliable every time. In this case these cordinents are (760, 1038).
+I have chrome pinned on my taskbar. So it will always have the same coordinates on the screen. This being said we can tell the computer to click those coordinates and it will be reliable every time. In this case these coordinates are (760, 1038).
 
-Soon after the click chrome will open. Our goal is to maximize the window, but the maximize button wont always be in the same place. Because of this we need to run the pic_in_pic function to find the maximize button on the screen and return its cordinents. To do this we need two things. First, we need to know what the maximize button looks like. Second, we will need a screenshot of the screen to sift through and find the maximize button. Image of the maximize button needs to be noted befor the program is run (this is done my croping a screenshot). The screenshot however needs to be re taken every time the program is run. The screenshot and the maximize button are shown below.
+Soon after the click chrome will open. Our goal is to maximize the window, but the maximize button won’t always be in the same place. Because of this we need to run the pic_in_pic function to find the maximize button on the screen and return its coordinates. To do this we need two things. First, we need to know what the maximize button looks like. Second, we will need a screenshot of the screen to sift through and find the maximize button. Image of the maximize button needs to be noted before the program is run (this is done my cropping a screenshot). The screenshot however needs to be retaken every time the program is run. The screenshot and the maximize button are shown below.
+
 
 ![shot](https://user-images.githubusercontent.com/92893340/168201851-14c283a7-30df-4fe4-9615-6a103d2e096d.png)
 ![max_button](https://user-images.githubusercontent.com/92893340/168203000-694aec79-e041-4ca9-8507-4c0bb1fefbf0.PNG)
 
 Now that we have this data, the pic_in_pic function can go to work to find the maximize button and click on it. This is where the fun begins! 
 
-Now, pip_in_pic works by using the first pixel in the target picture and comparing it to every pixel in the main picture (the picture the program in looking through). Every time the RGB value of the first pixel in the target pic matches a pixel in the main pic an event is triggered. This event takes the length of the first row in the target pic and lookes ahead that many pixles in the main pic. If every pixel in the first row of the target pic matches the results from this test, 1920 is added to every pixel number. By adding 1920 to these pixles in the first row, the second row is found. From here the function can continue to compare RGB values. This last process is repeated for every horizontal row that the target pic has(the height of the target picture). 
+Now, pip_in_pic works by using the first pixel in the target picture and comparing it to every pixel in the main picture (the picture the program in looking through). Every time the RGB value of the first pixel in the target pic matches a pixel in the main pic an event is triggered. This event takes the length of the first row in the target pic and looks ahead that many pixels in the main pic. If every pixel in the first row of the target pic matches the results from this test, 1920 is added to every pixel number. By adding 1920 to these pixels in the first row, the second row is found. From here the function can continue to compare RGB values. This last process is repeated for every horizontal row that the target pic has(the height of the target picture).
+If all goes well and every RGB value matches, then all that needs to be done is to return the location of the target pic. There is a process to find this location. To find the location of the first pixel in coordinates we need to divide the value returned by 1920, if there is a remainder a value of one will be added to result. This result will represent the vertical value of the coordinates. The horizontal value is the remainder of the division problem that was just performed.
 
-If all goes well and every RGB value matches, then all that needs to be done is to return the location of the target pic. There is a process to find this location. To find the location of the first pixel in cordinents we need to divide the value returned by 1920, if there is a remander a value of one will be added to result. This result will represent the virtical value of the conrdinents. The horizontal value is the remander of the division problem that was just performed.
 
 
 # Scripts
